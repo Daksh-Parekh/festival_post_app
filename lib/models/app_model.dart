@@ -1,21 +1,12 @@
-// class ModelRoutes {
-//   String name, thumbnail;
-
-//   ModelRoutes(this.name, this.thumbnail);
-
-//   factory ModelRoutes.fromMap({required Map data}) => ModelRoutes(
-//         data['name'],
-//         data['thumbnail'],
-//       );
-// }
-
 class FestivalModal {
   String name, thumbnail;
+  List<String> img;
 
-  FestivalModal(this.name, this.thumbnail);
+  FestivalModal(this.name, this.thumbnail, this.img);
 
   factory FestivalModal.fromMap({required Map data}) => FestivalModal(
         data['name'],
         data['thumbnail'],
+        data['img'],
       );
 }
