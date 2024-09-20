@@ -1,4 +1,3 @@
-//Map
 import 'package:festival_post_app/models/app_model.dart';
 
 List<Map<String, dynamic>> festivals = [
@@ -197,9 +196,17 @@ List<Map<String, dynamic>> festivals = [
   }
 ];
 
-List<ModelRoutes> allFestival = festivals
+// List<ModelRoutes> allFestival = festivals
+//     .map(
+//       (e) => ModelRoutes.fromMap(
+//         data: e,
+//       ),
+//     )
+//     .toList();
+
+List<FestivalModal> allFestival = festivals
     .map(
-      (e) => ModelRoutes.fromMap(
+      (e) => FestivalModal.fromMap(
         data: e,
       ),
     )
